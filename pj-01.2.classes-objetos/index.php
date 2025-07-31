@@ -55,9 +55,9 @@
                // require_once ("index.php");
             $cp = new ContasApagar();
             $cp->descricao = isset($_GET["descricao"]) ? $_GET["descricao"] : "não informado.";
-            $cp->vencimento = isset($_GET["data"]) ? $_GET["data"] : 0;
-            $cp->valor = isset($_GET["valor"]) ? $_GET["valor"] : 0;
-            $cp->status = isset($_GET["status"]) ? $_GET["status"] : 0;
+            $cp->vencimento = isset($_GET["data"]) ? $_GET["data"] : "0";
+            $cp->valor = isset($_GET["valor"]) ? $_GET["valor"] : "0";
+            $cp->status = isset($_GET["status"]) ? $_GET["status"] : "0";
             // var_dump($cp);
             $cp->statusatual();
                     echo "<br>";
